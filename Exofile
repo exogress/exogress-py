@@ -1,0 +1,14 @@
+---
+version: 0.0.1
+revision: 1
+name: config-python
+mount_points:
+  python:
+    handlers:
+      upstream:
+        type: proxy
+        upstream: python
+        priority: 10
+upstreams:
+  python:
+    port: 4000
